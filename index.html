@@ -91,12 +91,33 @@
         <a href="Flowers.html">HOBBIES</a>
         <a href="StartUp.html">ABOUT US</a>
         <a href="www.instagram.com">CONTACT</a>
+        <button id="theme-toggle">🌙DARK MODE</button>
+
     </nav>
 
 <header>My Name Is Matipashe Moyo</header>
 
 
 <head> <style>
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+}
+
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s; 
+  font-family: Arial, sans-serif;
+}
+
     header { background-color: teal;
         text-align: center;
         padding: 20px;
@@ -108,12 +129,12 @@
     }
 </style>
     <body>
-         <p1><em>I am a girl of 20 years currently based at the University of Zimbabwe.</p1>
+         <p1><em>I am a girl of 20 years currently based at the University of Zimbabwe.What I can say to you as of now is brace yourself.</p1>
     <br><img src="static/IMG-20230111-WA0026.jpg" width="200" height="250"><br>
     <UL>
         <LI>Name: Matipashe</LI>
         <li>Surname: Moyo</li>
-        <li>Age: 19years</li>
+        <li>Age: 20years</li>
         <li>Sex: Female</li>
         <ol>My Life at the moment is circling around three things.
             <li>Reading</li>

@@ -24,6 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
         content.style.opacity = '1';
         content.style.transform = 'translateY(0)';
     }, 300);
+    const toggleButton = document.getElementById('theme-toggle');
+const body = document.body;
+
+toggleButton.addEventListener('click', () => {
+    
+    body.classList.toggle('dark-mode');
+
+    
+    if (body.classList.contains('dark-mode')) {
+        toggleButton.textContent = "☀️LIGHT MODE";
+    } else {
+        toggleButton.textContent = "🌙DARK MODE";
+    }
+});
+
 
     
     const spiritualityItem = document.querySelectorAll('ol li')[1]; 
