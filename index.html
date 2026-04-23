@@ -101,20 +101,23 @@
 <head> <style>
 
 :root {
-  --bg-image: url('static/Wallpaper (20).jpg');
+  --bg-image: url("static/Wallpaper (20).jpg");
   --text-color: #333333;
 }
 
 
 body.dark-mode {
-  --bg-image: url('static/Wallpaper (41).jpg');
+  --bg-image: url("static/Wallpaper (41).jpg");
   --text-color: #f0f0f0;
 }
 
 body {
   background-image: var(--bg-image);
+   background-size: cover;
+    background-position: center;
   color: var(--text-color);
-  transition: background-image 0.3s, color 0.3s; 
+  transition: background-image 0.5s ease-in-out, color 0.3s;
+   height: 100vh;
   font-family: Arial, sans-serif;
 }
 
