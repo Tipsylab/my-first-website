@@ -1,8 +1,8 @@
-// 1. Personalized Welcome Greeting
+
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
+ 
     
-    // Ask for the visitor's name only once per session
     if (!sessionStorage.getItem('visitorName')) {
         const name = prompt("Welcome! What is your name?");
         if (name) {
@@ -14,8 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         header.innerText += ` (Welcome back, ${storedName}!)`;
     }
 
-    // 2. Smooth Reveal Animation
-    // Makes the content fade in and slide up when the page loads
+   
     const content = document.querySelector('.content-box');
     content.style.opacity = '0';
     content.style.transform = 'translateY(20px)';
@@ -26,9 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         content.style.transform = 'translateY(0)';
     }, 300);
 
-    // 3. Interactive spirituality "Thought of the Day"
-    // Adds a button dynamically to your list
-    const spiritualityItem = document.querySelectorAll('ol li')[1]; // The "Spirituality" list item
+    
+    const spiritualityItem = document.querySelectorAll('ol li')[1]; 
     
     const quoteBtn = document.createElement('button');
     quoteBtn.textContent = "✨ Get Inspiration";
