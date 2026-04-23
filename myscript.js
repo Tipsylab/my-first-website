@@ -38,9 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
     spiritualityItem.appendChild(quoteBtn);
 
     const quotes = [
-        "The soul always knows what to do to heal itself.",
-        "Peace comes from within. Do not seek it without.",
-        "Quiet the mind, and the soul will speak."
+        "God has given us a peace that surpasseth understanding in Christ Jesus.",
+        "Do not be anxious about a thing but cast your burdens on him because he cares for you.",
+        "Hope in Christ for He will never disappoint."
     ];
 
     quoteBtn.addEventListener('click', () => {
